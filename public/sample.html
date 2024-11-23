@@ -1,0 +1,540 @@
+<div {http://www.idpf.org/2007/ops}type="bodymatter" class="calibre" id="calibre_link-690">
+<section {http://www.idpf.org/2007/ops}type="chapter" class="toclist">
+<header class="calibre9">
+<h1 class="calibre15"><a id="calibre_link-17" class="calibre3"></a><span class="calibre7">Chapter 1</span><br class="calibre11" /><span class="calibre7">Getting Started with Android Programming</span></h1>
+</header>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="1" id="calibre_link-110" class="calibre27"></span>WHAT YOU WILL LEARN IN THIS CHAPTER</h1>
+<ul class="calibre22">
+<li class="calibre6">What is Android?</li>
+<li class="calibre6">Android versions and its feature set</li>
+<li class="calibre6">The Android architecture</li>
+<li class="calibre6">The various Android devices on the market</li>
+<li class="calibre6">The Android Market application store</li>
+<li class="calibre6">How to obtain the tools and SDK for developing Android applications</li>
+<li class="calibre6">How to develop your first Android application</li>
+</ul>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><i class="calibre20">CODE DOWNLOAD</i></h1>
+<p class="calibre21"><i class="calibre20">There are no code downloads for this chapter.</i></p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+<p id="calibre_link-878" class="calibre13">Welcome to the world of Android! This chapter explains what Android is and what makes it so compelling to both developers and device manufacturers. It also shows you how to obtain and set up all the necessary tools so that you can test your application on an Android emulator in Android Studio 2 and how to get started with developing your first Android application. By the end of this chapter, you will be equipped with the basic knowledge you need to explore more sophisticated techniques and tricks for developing your next killer Android application.</p>
+<section class="toclist">
+<h2 class="calibre4"><a id="calibre_link-18" class="calibre3"></a>WHAT IS ANDROID?</h2>
+<p class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="2" id="calibre_link-111" class="calibre16"></span>Android is a mobile operating system that is based on a modified version of Linux. It was originally developed by a startup of the same name, Android, Inc. In 2005, as part of its strategy to enter the mobile space, Google purchased Android, Inc. and took over its development work (as well as its development team).</p>
+<p id="calibre_link-879" class="calibre13">Google wanted the Android OS to be open and free, so most of the Android code was released under the open source Apache License. That means anyone who wants to use Android can do so by downloading the full Android source code. Moreover, vendors (typically hardware manufacturers) can add their own proprietary extensions to Android and customize Android to differentiate their products from others. This development model makes Android very attractive to vendors, especially those companies affected by the phenomenon of Apple's iPhone, which was a hugely successful product that revolutionized the smartphone industry. When the iPhone was launched, many smartphone manufacturers had to scramble to find new ways of revitalizing their products. These manufacturers saw Android as a solution, meaning they will continue to design their own hardware and use Android as the operating system that powers it. Some companies that have taken advantage of Android's open source policy include Motorola and Sony Ericsson, which have been developing their own mobile operating systems for many years.</p>
+<p id="calibre_link-880" class="calibre13">The main advantage to adopting Android is that it offers a unified approach to application development. Developers need only develop for Android in general, and their applications should be able to run on numerous different devices, as long as the devices are powered using Android. In the world of smartphones, applications are the most important part of the success chain.</p>
+<section class="toclist">
+<h3 class="calibre24">Android Versions</h3>
+<p class="calibre13">Android has gone through quite a number of updates since its first release. <a id="calibre_link-832" href="#calibre_link-682" class="calibre3">Table 1.1</a> shows the various versions of Android and their codenames.</p>
+<figure class="calibre28">
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-682" href="#calibre_link-832" class="calibre3"><b class="calibre14">Table 1.1</b></a></span> A Brief History of Android Versions</p>
+</figcaption>
+<table border="1" class="calibre30">
+<tr class="calibre31">
+<td class="left"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="3" id="calibre_link-112" class="calibre16"></span><b class="calibre14">ANDROID VERSION</b></td>
+<td class="left"><b class="calibre14">RELEASE DATE</b></td>
+<td class="left"><b class="calibre14">CODENAME</b></td>
+</tr>
+<tr class="calibre31">
+<td class="left">1.1</td>
+<td class="left">February 9, 2009</td>
+<td class="left"></td>
+</tr>
+<tr class="calibre31">
+<td class="left">1.5</td>
+<td class="left">April 30, 2009</td>
+<td class="left">Cupcake</td>
+</tr>
+<tr class="calibre31">
+<td class="left">1.6</td>
+<td class="left">September 15, 2009</td>
+<td class="left">Donut</td>
+</tr>
+<tr class="calibre31">
+<td class="left">2.0/2.1</td>
+<td class="left">October 26, 2009</td>
+<td class="left">Éclair</td>
+</tr>
+<tr class="calibre31">
+<td class="left">2.2</td>
+<td class="left">May 20, 2010</td>
+<td class="left">Froyo</td>
+</tr>
+<tr class="calibre31">
+<td class="left">2.3</td>
+<td class="left">December 6, 2010</td>
+<td class="left">Gingerbread</td>
+</tr>
+<tr class="calibre31">
+<td class="left">3.0/3.1/3.2</td>
+<td class="left">February 22, 2011</td>
+<td class="left">Honeycomb</td>
+</tr>
+<tr class="calibre31">
+<td class="left">4.0</td>
+<td class="left">October 18, 2011</td>
+<td class="left">Ice Cream Sandwich</td>
+</tr>
+<tr class="calibre31">
+<td class="left">4.1</td>
+<td class="left">July 9, 2012</td>
+<td class="left">Jelly Bean</td>
+</tr>
+<tr class="calibre31">
+<td class="left">4.4</td>
+<td class="left">October 31, 2013</td>
+<td class="left">KitKat</td>
+</tr>
+<tr class="calibre31">
+<td class="left">5.0</td>
+<td class="left">November 12, 2014</td>
+<td class="left">Lollipop</td>
+</tr>
+<tr class="calibre31">
+<td class="left">6.0</td>
+<td class="left">October 5, 2015</td>
+<td class="left">Marshmallow</td>
+</tr>
+<tr class="calibre31">
+<td class="left">7.0</td>
+<td class="left">TBD</td>
+<td class="left">Nougat</td>
+</tr>
+</table>
+</figure>
+<p id="calibre_link-881" class="calibre13">In 2016, Google released Android 7.0; the following are the key changes in Android 7.0:</p>
+<ul class="calibre22">
+<li class="calibre6">Split-screen multi-window mode</li>
+<li class="calibre6">Redesigned notification shade</li>
+<li class="calibre6">Refined “Doze” feature</li>
+<li class="calibre6">Switch from JRE (Java Runtime Environment) to OpenJDK</li>
+</ul>
+<p id="calibre_link-882" class="calibre13">One important thing to keep in mind as you are looking at Android versions is that each version has its own features and APIs (application programming interfaces). Therefore, if your application is written for the newest version of Android, and it uses an API that was not present in an older version of Android, then only devices running that newer version of Android will be able to use your application.</p>
+</section>
+<section class="toclist">
+<h3 class="calibre24">Features of Android</h3>
+<p class="calibre13">Because Android is open source and freely available to manufacturers for customization, there are no fixed hardware or software configurations. However, the base Android OS supports many features, including</p>
+<ul class="calibre22">
+<li class="calibre6"><b class="calibre14">Storage</b>&mdash;SQLite, a lightweight relational database, for data storage. <a href="#calibre_link-739" class="calibre3">Chapter 7</a> discusses data storage in more detail.</li>
+<li class="calibre6"><b class="calibre14">Connectivity</b>&mdash;GSM/EDGE, IDEN, CDMA, EV-DO, UMTS, Bluetooth (includes A2DP and AVRCP), Wi-Fi, LTE, and WiMAX. <a href="#calibre_link-743" class="calibre3">Chapter 11</a> discusses networking in more detail.</li>
+<li class="calibre6"><b class="calibre14">Messaging</b>&mdash;Both SMS and MMS. <a href="#calibre_link-741" class="calibre3">Chapter 9</a> discusses messaging in more detail.</li>
+<li class="calibre6"><b class="calibre14">Media support</b> H.263, H.264 (in 3GP or MP4 container), MPEG-4 SP, AMR, AMR-WB (in 3GP container), AAC, HE-AAC (in MP4 or 3GP container), MP3, MIDI, Ogg Vorbis, WAV, JPEG, PNG, GIF, and BMP.</li>
+<li class="calibre6"><b class="calibre14">Hardware support</b>&mdash;Accelerometer sensor, camera, digital compass, proximity sensor, and GPS.</li>
+<li class="calibre6"><b class="calibre14">Multi-touch</b>&mdash;Multi-touch screens.</li>
+<li class="calibre6"><b class="calibre14">Multi-tasking</b>&mdash;Multi-tasking applications.</li>
+<li class="calibre6"><b class="calibre14">Tethering</b>&mdash;Sharing of Internet connections as a wired/wireless hotspot.</li>
+</ul>
+<p id="calibre_link-883" class="calibre13">Android's web browser is based on the open source WebKit and Chrome's V8 JavaScript engine.</p>
+</section>
+<section class="toclist">
+<h3 class="calibre24">Architecture of Android</h3>
+<p class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="4" id="calibre_link-113" class="calibre16"></span>To understand how Android works, take a look at <a id="calibre_link-833" href="#calibre_link-523" class="calibre3">Figure 1.1</a>, which shows the various layers that make up the Android operating system (OS).</p>
+<figure class="calibre28">
+<img class="center" src="images/000006.jpg" alt="A chart of the various layers that make up the Android operating system (OS) with titles Applications, Applications Framework, Libraries, Android runtime, and Linux kernel with text boxes under each title." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-523" href="#calibre_link-833" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="5" id="calibre_link-114" class="calibre16"></span><b class="calibre14">Figure 1.1</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-884" class="calibre13">The Android OS is roughly divided into five sections in four main layers:</p>
+<ul class="calibre22">
+<li class="calibre6"><b class="calibre14">Linux kernel</b>&mdash;This is the kernel on which Android is based. This layer contains all the low-level device drivers for the various hardware components of an Android device.</li>
+<li class="calibre6"><b class="calibre14">Libraries</b>&mdash;These contain the code that provides the main features of an Android OS. For example, the SQLite library provides database support so that an application can use it for data storage. The WebKit library provides functionalities for web browsing.</li>
+<li class="calibre6"><b class="calibre14">Android runtime</b>&mdash;The Android runtime is located in the same layer with the libraries and provides a set of core libraries that enable developers to write Android apps using the Java programming language. The Android runtime also includes the Dalvik virtual machine, which enables every Android application to run in its own process, with its own instance of the Dalvik virtual machine. (Android applications are compiled into Dalvik executables). Dalvik is a specialized virtual machine designed specifically for Android and optimized for battery-powered mobile devices with limited memory and CPU power.</li>
+<li class="calibre6"><b class="calibre14">Application framework</b>&mdash;The application framework exposes the various capabilities of the Android OS to application developers so that they can make use of them in their applications.</li>
+<li class="calibre6"><b class="calibre14">Applications</b>&mdash;At this top layer are the applications that ship with the Android device (such as Phone, Contacts, Browser, and so on), as well as applications that you download and install from the Android Market. Any applications that you write are located at this layer.</li>
+</ul>
+</section>
+<section class="toclist">
+<h3 class="calibre24">Android Devices in the Market</h3>
+<p class="calibre13">Android devices come in all shapes and sizes including, but not limited to, the following types of devices:</p>
+<ul class="calibre22">
+<li class="calibre6">Smartphones</li>
+<li class="calibre6">Tablets</li>
+<li class="calibre6">E-reader devices</li>
+<li class="calibre6">Internet TVs</li>
+<li class="calibre6">Automobiles</li>
+<li class="calibre6">Smartwatches</li>
+</ul>
+<p id="calibre_link-885" class="calibre13">Chances are good that you own at least one of the preceding devices. <a id="calibre_link-834" href="#calibre_link-524" class="calibre3">Figure 1.2</a> shows the Samsung Galaxy Edge 7.</p>
+<figure class="calibre28">
+<img class="center" src="images/000009.jpg" alt="A digital capture of Samsung Galaxy Edge 7 front screen." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-524" href="#calibre_link-834" class="calibre3"><b class="calibre14">Figure 1.2</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-886" class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="6" id="calibre_link-115" class="calibre16"></span>Another popular category of devices is the tablet. Tablets typically come in two sizes: 7″ and 10″, measured diagonally.</p>
+<p id="calibre_link-887" class="calibre13">Besides smartphones and tablets, Android is used in dedicated devices, such as e-book readers. <a href="#calibre_link-526" class="calibre3">Figure 1.4</a> shows the Barnes and Noble's NOOK Color running the Android OS.</p>
+<p id="calibre_link-888" class="calibre13">In addition to the popular mobile devices I've already mentioned, Android is finding its way onto your wrist. Smartwatches, and “wearables” in general, have become a major segment of the Android population. <a id="calibre_link-835" href="#calibre_link-525" class="calibre3">Figure 1.3</a> shows the Motorola Moto 360 Smartwatch, which runs Android Wear (a version of Android OS specifically designed for wearables).</p>
+<figure class="calibre28">
+<img class="center" src="images/000013.jpg" alt="A digital capture of Motorola Moto 360 Smartwatch." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-525" href="#calibre_link-835" class="calibre3"><b class="calibre14">Figure 1.3</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-889" class="calibre13">At the time of writing, the Samsung Galaxy Nexus (see <a id="calibre_link-836" href="#calibre_link-526" class="calibre3">Figure 1.4</a>) is the only device running a pure version of Android. Many manufacturers add their own modifications to the Android OS for use on their specific devices. Motorola devices <span {http://www.idpf.org/2007/ops}type="pagebreak" title="7" id="calibre_link-116" class="calibre16"></span>have Motoblur, HTC devices have HTC Sense, and so on. However, the Nexus devices always run a clean version of Android with no modifications.</p>
+<figure class="calibre28">
+<img class="center" src="images/000012.jpg" alt="A digital capture of the Barnes and Noble’s NOOK Color running the Android OS." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-526" href="#calibre_link-836" class="calibre3"><b class="calibre14">Figure 1.4</b></a></span></p>
+</figcaption>
+</figure>
+</section>
+<section class="toclist">
+<h3 class="calibre24">The Android Market</h3>
+<p class="calibre13">As mentioned earlier, one of the main factors determining the success of a smartphone platform is the applications that support it. It is clear from the success of the iPhone that applications play a very vital role in determining whether a new platform swims or sinks. Also, making these applications accessible to the general user is extremely important.</p>
+<p id="calibre_link-890" class="calibre13">Users can simply use the Google Play application that is preinstalled on their Android devices to directly download third-party applications to their devices. Both paid and free applications are available in the Google Play Store, although paid applications are available only to users in certain countries because of legal issues.</p>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><i class="calibre20">NOTE</i></h1>
+<p class="calibre21"><i class="calibre20">Chapter 13 discusses more about Google Play Store and how you can sell your own applications in it.</i></p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+</section>
+</section>
+<section class="toclist">
+<h2 class="calibre4"><a id="calibre_link-19" class="calibre3"></a>OBTAINING THE REQUIRED TOOLS</h2>
+<p class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="8" id="calibre_link-117" class="calibre16"></span>Now that you know what Android is and what its feature set contains, you are probably anxious to get your hands dirty and start writing some applications! Before you write your first app, however, you need to download the required tools.</p>
+<p id="calibre_link-891" class="calibre13">For Android development, you can use a Mac, a Windows PC, or a Linux machine. You can freely download all the necessary tools. Most of the examples provided in this book are written to work on Android Studio. For this book, I am using a Windows 10 computer to demonstrate all the code samples. If you are using a Mac or Linux computer, the screenshots should look similar. Some minor differences might be present, but you should be able to follow along without problems.</p>
+<p id="calibre_link-892" class="calibre13">Let the fun begin!</p>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature1">
+<h2 class="calibre23">JAVA JDK 8</h2>
+<p class="calibre21">The Android Studio 2 makes use of the Java SE Development Kit 8 (JDK). If your computer does not have the JDK 8 installed, you should start by downloading it from <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" class="calibre3">www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a> and installing it prior to moving to the next section.</p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+<section class="toclist">
+<h3 class="calibre24">Android Studio</h3>
+<p class="calibre13">The first and most important piece of software you need to download is Android Studio 2. After you have downloaded and installed Android Studio 2, you can use the SDK Manager to download and install multiple versions of the Android SDK. Having multiple versions of the SDK available enables you to write programs that target different devices. For example, you can write one version of an application that specifically targets Android Nougat, but because that flavor of Android is on less than 1% of devices, with multiple versions of the SDK you can also write a version of your app that uses older features and targets Marshmallow or Lollipop users. You can use the Android Device Manager to set up device emulators.</p>
+<p id="calibre_link-893" class="calibre13">You can download Android Studio 2 from <a href="http://developer.android.com/sdk/index.html" class="calibre3">http://developer.android.com/sdk/index.html</a> (see <a id="calibre_link-837" href="#calibre_link-527" class="calibre3">Figure 1.5</a>).</p>
+<figure class="calibre28">
+<img class="center" src="images/000017.jpg" alt="A screenshot of the Android Studio page with DOWNLOAD ANDROID STUDIO 2.0 button." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-527" href="#calibre_link-837" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="9" id="calibre_link-118" class="calibre16"></span><b class="calibre14">Figure 1.5</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-894" class="calibre13">Android Studio 2 is packaged in an executable. Run the install process to set up Android Studio 2. After you've downloaded and run the setup executable, use the following steps to go through the installation process:</p>
+<ol class="calibre5">
+<li class="calibre6">Accept the terms and conditions shown in <a id="calibre_link-838" href="#calibre_link-528" class="calibre3">Figure 1.6</a>.
+<figure class="calibre28">
+<img class="center" src="images/000015.jpg" alt="A screenshot of a web page titled Download the Android SDK Tools with terms and conditions given. There is a checkbox below for I have read and agree with the above terms and conditions." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-528" href="#calibre_link-838" class="calibre3"><b class="calibre14">Figure 1.6</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">If you have an older version of Android Studio already installed on your computer, the Android Studio Setup prompts you to automatically uninstall it. Even though the old version of Android Studio will be uninstalled, the settings and configurations are retained. You have an opportunity to reapply those settings and configurations to Android Studio 2 after the setup has completed. <a id="calibre_link-839" href="#calibre_link-529" class="calibre3">Figure 1.7</a> shows the screen where you are prompted to uninstall an old version of Android Studio.
+<figure class="calibre28">
+<img class="center" src="images/000020.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-529" href="#calibre_link-839" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="10" id="calibre_link-119" class="calibre16"></span><b class="calibre14">Figure 1.7</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Click Next on the Welcome to Android Studio Setup screen (see <a id="calibre_link-840" href="#calibre_link-530" class="calibre3">Figure 1.8</a>).
+<figure class="calibre28">
+<img class="center" src="images/000019.jpg" alt="A screenshot of Android Studio Setup window with Welcome to Android Studio Setup screen and Next button below." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-530" href="#calibre_link-840" class="calibre3"><b class="calibre14">Figure 1.8</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Pick which components of Android Studio you want to install from the screen shown in <a id="calibre_link-841" href="#calibre_link-531" class="calibre3">Figure 1.9</a>. Android Studio is selected by default (and cannot be deselected), which makes sense given that you are going through all of this trouble for the distinct purpose of installing Android Studio. Android SDK and Android Virtual Device are also selected by default. Click Next to accept the default choices and continue.
+<figure class="calibre28">
+<img class="center" src="images/000023.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-531" href="#calibre_link-841" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="11" id="calibre_link-120" class="calibre16"></span><b class="calibre14">Figure 1.9</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">You are presented with the License Agreement, as shown in <a id="calibre_link-842" href="#calibre_link-532" class="calibre3">Figure 1.10</a>. Click I Agree to continue.
+<figure class="calibre28">
+<img class="center" src="images/000022.jpg" alt="A screenshot of Android Studio Setup window with the License Agreement screen and I Agree button below." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-532" href="#calibre_link-842" class="calibre3"><b class="calibre14">Figure 1.10</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">On the configuration settings screen, it is best to accept the default locations specified by the setup process and click Next to continue. You see the Choose Start Menu Folder screen (shown in <a id="calibre_link-843" href="#calibre_link-533" class="calibre3">Figure 1.11</a>). Click Install to kick off the Android Studio 2 installation.
+<figure class="calibre28">
+<img class="center" src="images/000025.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-533" href="#calibre_link-843" class="calibre3"><b class="calibre14">Figure 1.11</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="12" id="calibre_link-121" class="calibre16"></span>Installing Android Studio 2 could take a few minutes, depending on the speed of your computer. You are presented with a progress bar to help you track the state of the installation. Android Studio 2 is installed with a default SDK (Software Development Kit), in this case Marshmallow. Later in the process you have the opportunity to install other SDKs. The Android SDK allows you to develop and write applications geared for a specific version of Android. In other words, applications written with the Marshmallow SDK run on Android devices running Marshmallow, but they also possibly run on other versions depending on which features of the SDK you used in the application.</li>
+<li class="calibre6">When the install is complete, you will see a Completing Android Studio Setup screen (shown in <a id="calibre_link-844" href="#calibre_link-534" class="calibre3">Figure 1.12</a>). Leave the Start Android Studio box checked and click Finish.
+<figure class="calibre28">
+<img class="center" src="images/000024.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-534" href="#calibre_link-844" class="calibre3"><b class="calibre14">Figure 1.12</b></a></span></p>
+</figcaption>
+</figure></li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="13" id="calibre_link-122" class="calibre16"></span>Android Studio 2 prompts you to either import settings from a previous version of Android Studio or continue with new settings. If you uninstalled a previous version in the first step of the installation process, Android Studio offers you a chance to recover the settings used in that previous version and apply them to Android Studio 2 (see <a id="calibre_link-845" href="#calibre_link-535" class="calibre3">Figure 1.13</a>).
+<figure class="calibre28">
+<img class="center" src="images/000028.jpg" alt="A screenshot of Complete Installation window with I do not have a previous version of Studio or I do not want to import my setting radio button selected." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-535" href="#calibre_link-845" class="calibre3"><b class="calibre14">Figure 1.13</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<p id="calibre_link-895" class="calibre13">Now that Android Studio 2 is installed, you need to adjust the settings and options using the following steps:</p>
+<ol class="calibre5">
+<li class="calibre6">Click Continue at the Welcome screen and choose Standard from the Install Type selection screen shown in <a id="calibre_link-846" href="#calibre_link-536" class="calibre3">Figure 1.14</a>. Click Next to continue.
+<figure class="calibre28">
+<img class="center" src="images/000027.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-536" href="#calibre_link-846" class="calibre3"><b class="calibre14">Figure 1.14</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="14" id="calibre_link-123" class="calibre16"></span>Click Finish on the Verify Settings screen, and Android Studio 2 finalizes the setup process. You know the process is complete when you are greeted with the Welcome to Android Studio screen (see <a id="calibre_link-847" href="#calibre_link-537" class="calibre3">Figure 1.15</a>).
+<figure class="calibre28">
+<img class="center" src="images/000031.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-537" href="#calibre_link-847" class="calibre3"><b class="calibre14">Figure 1.15</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+</ol>
+<p id="calibre_link-896" class="calibre13">Now that Android Studio is set up, it's time to install the latest and greatest Android SDK.</p>
+</section>
+<section class="toclist">
+<h3 class="calibre24">Android SDK</h3>
+<p class="calibre13">The most important piece of software you need to download is, of course, the Android SDK. The Android SDK contains all of the packages and tools required to develop a functional Android application. The SDKs are named after the version of Android OS to which they correspond. By default, the Marshmallow SDK was installed with Android Studio 2, which means you can develop applications that will run seamlessly on devices with Android Marshmallow.</p>
+<p id="calibre_link-897" class="calibre13">However, if you want to install a different Android SDK, you can do so using the SDK Manager from the Android Studio welcome screen (shown in <a href="#calibre_link-537" class="calibre3">Figure 1.15</a>). From this screen, click the Configure drop-down menu in the lower-right corner. The Configure selection menu opens. Choose SDK Manager from this menu.</p>
+<p id="calibre_link-898" class="calibre13">The SDK configuration screen, shown in <a id="calibre_link-848" href="#calibre_link-538" class="calibre3">Figure 1.16</a>, shows that the Marshmallow SDK is already installed. Android N is available to be installed (as of the writing of this book Android Nougat was in a finalized beta, so it might be named differently now).</p>
+<figure class="calibre28">
+<img class="center" src="images/000030.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-538" href="#calibre_link-848" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="15" id="calibre_link-124" class="calibre16"></span><b class="calibre14">Figure 1.16</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-899" class="calibre13">Select Android Nougat, click Apply, and then click OK. However, before the SDK is installed you must accept the licensing agreement as shown in <a id="calibre_link-849" href="#calibre_link-539" class="calibre3">Figure 1.17</a>.</p>
+<figure class="calibre28">
+<img class="center" src="images/000034.jpg" alt="A screenshot of the SDK Quickfix installation window with License Agreement page. There is an Accept and a Decline radio button at the bottom." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-539" href="#calibre_link-849" class="calibre3"><b class="calibre14">Figure 1.17</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-900" class="calibre13">The setup process for Android Studio is now complete. The next section explains how to set up an Android Virtual Device that you can use to test your applications.</p>
+</section>
+<section class="toclist">
+<h3 class="calibre24">Creating Android Virtual Devices (AVDs)</h3>
+<p class="calibre13">The next step is to create an Android Virtual Device (AVD) you can use for testing your Android applications. An AVD is an emulator instance that enables you to model an actual device. Each AVD consists of a hardware profile; a mapping to a system image; and emulated storage, such as a secure digital (SD) card. One important thing to remember about emulators is that they are not perfect. There are some applications, such as games (which are GPU heavy) or applications that use sensors such as the GPS or accelerometer. These types of applications cannot be simulated with the same speed or consistency within an emulator as they can when running on an actual device. However, the emulator is good for doing some generalized testing of your applications.</p>
+<p id="calibre_link-901" class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="16" id="calibre_link-125" class="calibre16"></span>You can create as many AVDs as you want to test your applications with different configurations. This testing is important to confirm the behavior of your application when it is run on different devices with varying capabilities.</p>
+<p id="calibre_link-902" class="calibre13">Use the following steps to create an AVD. This example demonstrates creating an AVD (put simply, an Android emulator) that emulates an Android device running Android N on the Nexus 5x hardware specs.</p>
+<ol class="calibre5">
+<li class="calibre6">Start Android Studio so that the Welcome screen is visible (refer to <a href="#calibre_link-537" class="calibre3">Figure 1.15</a>). Click Start a New Android Studio Project. You see the Create New Project Wizard shown in <a id="calibre_link-850" href="#calibre_link-540" class="calibre3">Figure 1.18</a>.
+<figure class="calibre28">
+<img class="center" src="images/000033.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-540" href="#calibre_link-850" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="17" id="calibre_link-126" class="calibre16"></span><b class="calibre14">Figure 1.18</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Set up a HelloWorld project (that you will use in the final section of this chapter). Type <b class="calibre14">Chapter1Helloworld</b> in the Application Name field.</li>
+<li class="calibre6">You can keep the default values for the other fields on the New Project screen (they will be explained in more detail in later chapters). Click Next.
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><i class="calibre20">NOTE</i></h1>
+<p class="calibre21"><i class="calibre20">For the purposes of setting up a quick Hello World project and creating an AVD, you will be accepting many of the default values, without explanation, during the project setup process. This is fine for now, as all of the settings are explained in much greater detail in subsequent chapters.</i></p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+</li>
+<li class="calibre6">You should see the Targeted Android Devices screen. By default, the Create New Project Wizard selects for you the Android SDK level that has the greatest activity based on statistics gathered from Google Play. At the time this book was written 74.3 percent of the active devices on Google Play were written using Android Jelly Bean. For now, accept the default, as shown in <a id="calibre_link-851" href="#calibre_link-541" class="calibre3">Figure 1.19</a>, and click Next.
+<figure class="calibre28">
+<img class="center" src="images/000037.jpg" alt="A screenshot of the Create New Project Wizard in the Target Android Devices page. Phone and Tablet box is checked and API 18: Android 4.3 (Jelly Bean) option is selected in Minimum SDK." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-541" href="#calibre_link-851" class="calibre3"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="18" id="calibre_link-127" class="calibre16"></span><b class="calibre14">Figure 1.19</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">On the Add an Activity to Mobile screen, accept the default choice&mdash;Empty Activity (see <a id="calibre_link-852" href="#calibre_link-542" class="calibre3">Figure 1.20</a>)&mdash;and click Next.
+<figure class="calibre28">
+<img class="center" src="images/000036.jpg" alt="A screenshot of the Create New Project Wizard in the Add an Activity screen with Empty Activity option selected." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-542" href="#calibre_link-852" class="calibre3"><b class="calibre14">Figure 1.20</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="19" id="calibre_link-128" class="calibre16"></span>Accept all of the defaults on the Customize the Activity screen, as shown in <a id="calibre_link-853" href="#calibre_link-543" class="calibre3">Figure 1.21</a>, and click Finish. <a id="calibre_link-854" href="#calibre_link-544" class="calibre3">Figure 1.22</a> shows the open Android Studio IDE.
+<figure class="calibre28">
+<img class="center" src="images/000040.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-543" href="#calibre_link-853" class="calibre3"><b class="calibre14">Figure 1.21</b></a></span></p>
+</figcaption>
+</figure>
+<figure class="calibre28">
+<img class="center" src="images/000039.jpg" alt="A screenshot of the Android Studio IDE in Chapter1HelloWorld - Android Studio 2.1 RC window." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-544" href="#calibre_link-854" class="calibre3"><b class="calibre14">Figure 1.22</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="20" id="calibre_link-129" class="calibre16"></span>Launch the AVD Manager by selecting Tools <img src="images/000010.jpg" alt="images" class="calibre32" /> Android <img src="images/000010.jpg" alt="images" class="calibre32" /> AVD Manager or using the AVD Manager button from the toolbar. <a id="calibre_link-855" href="#calibre_link-545" class="calibre3">Figure 1.23</a> shows the Android Virtual Device Manager Wizard, which is where you set up AVDs to be used when you emulate your application in Android on your desktop. 
+<figure class="calibre28">
+<img class="center" src="images/000043.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-545" href="#calibre_link-855" class="calibre3"><b class="calibre14">Figure 1.23</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Click the + Create Virtual Device button to create a new AVD. The Virtual Device Configuration screen opens as shown in <a id="calibre_link-856" href="#calibre_link-546" class="calibre3">Figure 1.24</a>.
+<figure class="calibre28">
+<img class="center" src="images/000042.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-546" href="#calibre_link-856" class="calibre3"><b class="calibre14">Figure 1.24</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Select the Nexus 5x hardware profile and click Next. Although none of the emulators offers the same performance as its actual hardware counterpart, the Nexus 5x should run well on most x86-based desktops, and it still offers some of the mid- to high-end Android device specs.</li>
+<li class="calibre6">For the system image, select and install the latest option, which at the time this book was written is Android Nougat. Click the x86 Images tab (see <a id="calibre_link-857" href="#calibre_link-547" class="calibre3">Figure 1.25</a>), select N from the list of images, and then click Next.
+<figure class="calibre28">
+<img class="center" src="images/000046.jpg" alt="A screenshot of the Select Hardware page Phone category in Virtual Device Configuration window. Nexus 5X option is selected at the right." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-547" href="#calibre_link-857" class="calibre3"><b class="calibre14">Figure 1.25</b></a></span></p>
+</figcaption>
+</figure></li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="21" id="calibre_link-130" class="calibre16"></span>In the Android Virtual Device (AVD) dialog, accept the defaults as shown in <a id="calibre_link-858" href="#calibre_link-548" class="calibre3">Figure 1.26</a>. Click the Finish button to begin building the AVD.</li>
+</ol>
+<figure class="calibre28">
+<img class="center" src="images/000045.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-548" href="#calibre_link-858" class="calibre3"><b class="calibre14">Figure 1.26</b></a></span></p>
+</figcaption>
+</figure>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><i class="calibre20">TIP</i></h1>
+<p class="calibre21"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="22" id="calibre_link-131" class="calibre16"></span><i class="calibre20">It is preferable to create a few AVDs with different API levels and hardware configurations so that your application can be tested on different versions of the Android OS.</i></p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature1">
+<h2 class="calibre23">TRY IT OUT<br class="calibre11" />Creating a Jellybean Emulator</h2>
+<p class="calibre21"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="23" id="calibre_link-132" class="calibre16"></span>When you created your first Android project earlier in this section, the setup process determined that Jelly Bean was the most active version of Android on Google Play. In this Try It Out, you create an AVD for Android Jelly Bean.</p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+<ol class="calibre5">
+<li class="calibre6">Launch the AVD Manager by selecting Tools <img src="images/000010.jpg" alt="images" class="calibre32" /> Android <img src="images/000010.jpg" alt="images" class="calibre32" /> AVD Manager or using the AVD Manager button from the toolbar.</li>
+<li class="calibre6">In the Android Virtual Device Manager Wizard, click the + Create Virtual Device button.</li>
+<li class="calibre6"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="24" id="calibre_link-133" class="calibre16"></span>Select the Nexus 5x hardware profile and click Next.</li>
+<li class="calibre6">Click the x86 Images tab, select Jelly Bean from the list of images, and then click Download.</li>
+<li class="calibre6">Accept the agreement and download the Jelly Bean SDK.</li>
+<li class="calibre6">After the SDK has downloaded, click Jelly Bean once again (on the x86 Images tab) and click Next.</li>
+<li class="calibre6">In the Android Virtual Device (AVD) dialog, accept the defaults and click the Finish button.</li>
+</ol>
+<p id="calibre_link-903" class="calibre13">After you have created your ADV, it is time to test it. There is no better way to do this than to create and launch the ubiquitous Hello World application.</p>
+</section>
+<section class="toclist">
+<h3 class="calibre24">The Android Developer Community</h3>
+<p class="calibre13">Now that Android is in its seventh version, there is a large developer community all over the world. It is easy to find solutions to problems and to find like-minded developers with whom to share app ideas and experiences.</p>
+<p id="calibre_link-904" class="calibre13">The following are some developer communities and websites that you can turn to for help if you run into problems while working with Android:</p>
+<ul class="calibre22">
+<li class="calibre6"><b class="calibre14">Stack Overflow</b> (<a href="http://www.stackoverflow.com" class="calibre3">www.stackoverflow.com</a>)&mdash;Stack Overflow is a collaboratively edited question-and-answer site for developers. If you have a question about Android, chances are someone at Stack Overflow is probably already discussing the same question. It's also likely that someone else has already provided the answer. Best of all, other developers can vote for the best answer so that you can know which are the answers that are most trustworthy.</li>
+<li class="calibre6"><b class="calibre14">Google Android Training</b> (<a href="http://developer.android.com/training/index.html" class="calibre3">http://developer.android.com/training/index.html</a>)&mdash;Google has launched the Android Training site, which contains a number of useful classes grouped by topics. At the time of writing, the classes mostly contain code snippets that are useful to Android developers who have started with the basics. After you have learned the basics in this book, I strongly suggest you take a look at the classes.</li>
+<li class="calibre6"><b class="calibre14">Android Discuss</b> (<a href="http://groups.google.com/group/android-discuss" class="calibre3">http://groups.google.com/group/android-discuss</a>)&mdash;Android Discuss is a discussion group hosted by Google using the Google Groups service. Here, you will be able to discuss the various aspects of Android programming. This group is monitored closely by the Android team at Google, so this is good place to clarify your doubts and to learn new tips and tricks.</li>
+</ul>
+</section>
+</section>
+<section class="toclist">
+<h2 class="calibre4"><a id="calibre_link-20" class="calibre3"></a>LAUNCHING YOUR FIRST ANDROID APPLICATION</h2>
+<p class="calibre13">With all the tools and the SDK downloaded and installed, it is now time to start your engine. As in most programming books, the first example uses the ubiquitous Hello World application. This will give you a detailed look at the various components that make up an Android project. This is also the easiest Android project you will ever make.</p>
+<p id="calibre_link-905" class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="25" id="calibre_link-134" class="calibre16"></span>Believe it or not, the Hello World application is already finished. By default, when you create a new application in Android Studio, it creates a Hello World application. Let's launch this application and, in the process, also launch the Android emulator to see how everything works.</p>
+<ol class="calibre5">
+<li class="calibre6">Select Run <img src="images/000010.jpg" alt="images" class="calibre32" /> Run <i class="calibre20">app</i> from the Android Studio menu bar. You should see the Select Deployment Target dialog as shown in <a id="calibre_link-859" href="#calibre_link-549" class="calibre3">Figure 1.27</a>.
+<figure class="calibre28">
+<img class="center" src="images/000049.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-549" href="#calibre_link-859" class="calibre3"><b class="calibre14">Figure 1.27</b></a></span></p>
+</figcaption>
+</figure>
+</li>
+<li class="calibre6">Select the Nexus 5X API N (feel free to select the Nexus 5x API 18, which is the Jelly Bean emulator that you created in the Try It Out for the last section), and click Next. 
+<aside class="authorgroup">
+<div class="top"><hr class="calibre18" /></div>
+<section class="feature">
+<h1 class="calibre19"><i class="calibre20">NOTE</i></h1>
+<p class="calibre21"><i class="calibre20">Note that If there's ever a time when you have not already created the emulator, you can create an emulator at this point.</i></p>
+<div class="top"><hr class="calibre18" /></div>
+</section>
+</aside>
+</li>
+<li class="calibre6">It can take up to five minutes, and sometimes longer (depending on the hardware specs of your desktop) for the emulator to start and fully load. During this time (the first time you launch the emulator) the application might time out. If a message pops up in Android Studio telling you that the application timed out waiting for the ADB (Android Debugging Bridge) to start, or another similar message, just wait for the emulator to fully load, and then once again select Run <img src="images/000010.jpg" alt="images" class="calibre32" /> Run <i class="calibre20">app</i> from the Android Studio menu bar.</li>
+</ol>
+<p id="calibre_link-906" class="calibre13"><span {http://www.idpf.org/2007/ops}type="pagebreak" title="26" id="calibre_link-135" class="calibre16"></span>With the emulator fully loaded and started, Android Studio can install your Hello World application. The application will display as shown in <a id="calibre_link-860" href="#calibre_link-550" class="calibre3">Figure 1.28</a>.</p>
+<figure class="calibre28">
+<img class="center" src="images/000048.jpg" alt="Image described by surrounding text." />
+<figcaption class="calibre29">
+<p class="calibre13"><span class="figurelabel"><a id="calibre_link-550" href="#calibre_link-860" class="calibre3"><b class="calibre14">Figure 1.28</b></a></span></p>
+</figcaption>
+</figure>
+<p id="calibre_link-907" class="calibre13">This was a very quick example of how to create and launch your first Android applications. However, what this example has really done for you is introduce you, on a general scale, to most of the major skills you will fine tune throughout this book.</p>
+</section>
+<section class="toclist">
+<h2 class="calibre4"><a id="calibre_link-21" class="calibre3"></a>SUMMARY</h2>
+<p class="calibre13">This chapter provided a brief overview of Android and highlighted some of its capabilities. If you have followed the sections on downloading the tools and the Android SDK, you should now have a working system&mdash;one that is capable of developing Android applications that are more interesting than the Hello World application. In the next chapter, you find out about the inner workings of Android Studio before moving on to more complex Android application development concepts.</p>
+</section>
+<section class="toclist">
+<h2 class="calibre4">EXERCISES</h2>
+<ol class="none" id="calibre_link-908">
+<li class="calibre6"><b class="calibre14">1</b> <span {http://www.idpf.org/2007/ops}type="pagebreak" title="27" id="calibre_link-136" class="calibre16"></span>What is an AVD?</li>
+<li class="calibre6"><b class="calibre14">2</b> Why was Jelly Bean selected for you by default in the Targeted Android Devices dialog?</li>
+<li class="calibre6"><b class="calibre14">3</b> What does SDK stand for?</li>
+<li class="calibre6"><b class="calibre14">4</b> What tool is used to download new Android SDKs?
+<p id="calibre_link-909" class="calibre13">You can find answers to the exercises in the appendix.</p>
+</li>
+</ol>
+</section>
+<section class="toclist">
+<h2 class="calibre4"><a id="calibre_link-910" class="calibre3"></a><span {http://www.idpf.org/2007/ops}type="pagebreak" title="28" id="calibre_link-137" class="calibre33"></span>WHAT YOU LEARNED IN THIS CHAPTER</h2>
+<figure class="calibre28">
+<table border="1" class="calibre30">
+<tr class="calibre31">
+<td class="left"><b class="calibre14">TOPIC</b></td>
+<td class="left"><b class="calibre14">KEY CONCEPTS</b></td>
+</tr>
+<tr class="calibre31">
+<td class="left">Android OS</td>
+<td class="left">Android is an open source mobile operating system based on the Linux operating system. It is available to anyone who wants to adapt it to run on their own devices.</td>
+</tr>
+<tr class="calibre31">
+<td class="left">Languages used for Android application development</td>
+<td class="left">You use the Java programming language to develop Android applications. Written applications are compiled into Dalvik executables, which are then run on top of the Dalvik virtual machine.</td>
+</tr>
+<tr class="calibre31">
+<td class="left">Google Play</td>
+<td class="left">Google Play hosts all the various Android applications written by third-party developers.</td>
+</tr>
+<tr class="calibre31">
+<td class="left">Tools for Android application development</td>
+<td class="left">Android Studio, Android SDK, and virtual devices.</td>
+</tr>
+</table>
+</figure>
+</section>
+</section>
+</div>
